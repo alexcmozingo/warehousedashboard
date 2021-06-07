@@ -16,7 +16,7 @@
         <table id="ful">
             <tr>
                 <th>Name</th>
-                <th>$</th>
+                <th>Value</th>
                 <th>Quantity</th>
             </tr>
 

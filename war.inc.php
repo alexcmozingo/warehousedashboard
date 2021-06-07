@@ -4,7 +4,7 @@
  if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
     }
- $sql = "SELECT Name, $, Quantity FROM login";
+ $sql = "SELECT Name, Value, Quantity FROM login";
 
  $result = $conn->query($sql);
 
@@ -12,7 +12,7 @@
  // output data of each row
 
  while($row = $result->fetch_assoc()) {
- echo "<tr><td>" . $row["Name"]. "</td><td>" . $row["$"] . "</td><td>"
+ echo "<tr><td>" . $row["Name"]. "</td><td>" . $row["Value"] . "</td><td>"
  . $row["Quantity"]. "</td></tr>";
  }
  echo "</table>";
